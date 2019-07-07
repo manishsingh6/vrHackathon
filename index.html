@@ -67,6 +67,25 @@
     <audio id="corporaterealestate_fr" src="assets/sounds/corporaterealestate_male_fr.mp3" preload="auto"></audio>
     <audio id="corporateequity_en" src="assets/sounds/corporateequity_male_en.mp3" preload="auto"></audio>
     <audio id="corporateequity_fr" src="assets/sounds/corporateequity_male_fr.mp3" preload="auto"></audio>
+	
+		<audio id="financeofferrings_en" src="assets/sounds/finance_offerrings_male_en.mp3" preload="auto"></audio>
+		<audio id="financeofferrings_fr" src="assets/sounds/finance_offerrings_male_fr.mp3" preload="auto"></audio>
+		<audio id="financeadvisors_en" src="assets/sounds/finance_advisors_male_en.mp3" preload="auto"></audio>
+		<audio id="financeadvisors_fr" src="assets/sounds/finance_advisors_male_fr.mp3" preload="auto"></audio>
+		<audio id="financetransaction_en" src="assets/sounds/finance_transaction_male_en.mp3" preload="auto"></audio>
+		<audio id="financetransaction_fr" src="assets/sounds/finance_transaction_male_fr.mp3" preload="auto"></audio>
+		<audio id="investmentwelcome_en" src="assets/sounds/investment_welcome_male_en.mp3" preload="auto"></audio>
+		<audio id="investmentwelcome_fr" src="assets/sounds/investment_welcome_male_fr.mp3" preload="auto"></audio>
+		<audio id="investmentmanaged_en" src="assets/sounds/investment_managed_male_en.mp3" preload="auto"></audio>
+		<audio id="investmentmanaged_fr" src="assets/sounds/investment_managed_male_fr.mp3" preload="auto"></audio>
+		<audio id="investmentadivisory_en" src="assets/sounds/investment_advisory_male_en.mp3" preload="auto"></audio>
+		<audio id="investmentadivisory_fr" src="assets/sounds/investment_advisory_male_fr.mp3" preload="auto"></audio>
+		<audio id="investmentexcecution_en" src="assets/sounds/investment_excecution_male_en.mp3" preload="auto"></audio>
+		<audio id="investmentexcecution_fr" src="assets/sounds/investment_excecution_male_fr.mp3" preload="auto"></audio>
+		<audio id="artreal_en" src="assets/sounds/art_real_male_en.mp3" preload="auto"></audio>
+		<audio id="artreal_fr" src="assets/sounds/art_real_male_fr.mp3" preload="auto"></audio>
+		<audio id="philantrophy_en" src="assets/sounds/philantrophy_male_en.mp3" preload="auto"></audio>
+		<audio id="philantrophy_fr" src="assets/sounds/philantrophy_male_fr.mp3" preload="auto"></audio>
 
         <a-asset-item id="bench" src="assets/objects/bench/model.gltf"></a-asset-item>
         <a-asset-item id="statueLiberty" src="assets/objects/statueLiberty/model.gltf"></a-asset-item>
@@ -298,6 +317,7 @@
         <a-image position="2.98135 3.38595 -132.41151" rotation="-1.3263972957278558 -25.614078231323454 1.4902632251352712" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="3.16687 4.64426 -133" scale="0.43215 0.39 1" text="value: Financing; height: 2; lineHeight: 1.33; width: 27.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
 
+        <a-entity cursor-listener="src: #financeofferrings">
         <a-image position="5.32785 1.7073 -138.41151" src="#mortgageLoans" material="" geometry="" scale="3 2 2"></a-image>
         <a-entity position="5.32785 0.46911 -138.41151" scale="0.43215 0.39 1" text="value: Mortgage Loans; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
         <a-image position="1.41735 4.58283 -138.41151" src="#investmentLoans" material="" geometry="" scale="3 2 2"></a-image>
@@ -308,27 +328,33 @@
         <a-entity position="-2.79945 5.84326 -138.41151" scale="0.43215 0.39 1" text="value: Lombard credits; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
         <a-image position="-10.21752 1.70677 -138.41151" src="#liquidity" material="" geometry="" scale="3 2 2"></a-image>
         <a-entity position="-10.21752 0.44815 -138.41151" scale="0.43215 0.39 1" text="value: Liquidity facilities; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-
+        </a-entity>
+		
+		<a-entity cursor-listener="src: #financeadvisors">
         <a-entity gltf-model="#crowd" position="-15.11387 -1.8478 -156.8878" rotation="0 49.22509601086955 0" scale="2.23525 2.01829 3.19489"></a-entity>
         <a-entity position="-14.3304 3.14613 -158.75108" scale="0.43215 0.39 1" text="value: 30 credit advisors; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-entity gltf-model="#cashPile" position="8.07791 3.36186 -156.8878" rotation="" scale="0.5 0.5 0.5"></a-entity>
+         </a-entity>       
+        <a-entity cursor-listener="src: #financetransaction">	  
+	    <a-entity gltf-model="#cashPile" position="8.07791 3.36186 -156.8878" rotation="" scale="0.5 0.5 0.5"></a-entity>
         <a-entity position="8.07791 4.31376 -156.8878" scale="0.43215 0.39 1" text="value: 9000 financial transactions set up in 2017; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center"></a-entity>
         <a-entity position="8.07791 3.6323 -156.8878" scale="0.43215 0.39 1" text="value: representing 13.9 billion Euros; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center"></a-entity>
-
+        </a-entity>
         <!-- Investment Solutions -->
 
+        <a-entity cursor-listener="src: #investmentwelcome">
         <a-cylinder position="4.01807 -8.03519 -170" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
         <a-plane position="3.49925 3.64723 -170" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
         <a-image position="2.98135 3.38595 -169.41151" rotation="-1.3263972957278558 -25.614078231323454 1.4902632251352712" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="3.16687 4.64426 -169.5242" scale="0.43215 0.39 1" text="value: Investment Solutions; height: 2; lineHeight: 1.33; width: 25.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
-
+        </a-entity>
+		
         <!-- Investment Solutions-->
         <a-entity gltf-model="#fountain" position="-26.04088 3.25737 -178.77329" rotation="0 -67.57578827331955 0" scale="4 4 4"></a-entity>
-        <a-sphere id="managedSphere" position="-8.53956 3.52859 -176.5242" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 2"></a-sphere>
+        <a-sphere cursor-listener="src: #investmentmanaged" id="managedSphere" position="-8.53956 3.52859 -176.5242" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 2"></a-sphere>
         <a-entity position="-7.54131 2.1609 -174.8085" scale="0.43215 0.39 1" text="value: Managed; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-sphere id="advisorySphere" position="-2.47896 6.23401 -176.5242" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 2"></a-sphere>
+        <a-sphere cursor-listener="src: #investmentadivisory" id="advisorySphere" position="-2.47896 6.23401 -176.5242" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 2"></a-sphere>
         <a-entity position="-2.32861 4.36378 -174.8085" scale="0.43215 0.39 1" text="value: Advisory; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-sphere id="executionSphere" position="3.16687 4.02301 -176.5242" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 2"></a-sphere>
+        <a-sphere cursor-listener="src: #investmentexcecution" id="executionSphere" position="3.16687 4.02301 -176.5242" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 2"></a-sphere>
         <a-entity position="2.52792 2.47692 -174.8085" scale="0.43215 0.39 1" text="value: Execution; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
         <a-plane position="-2.55149 1.05832 -174.8085" color="#FFC65D" scale="6.90497 4.54019 3" material="color: #ffffff; emissive: #213ab3; opacity: 0.3" geometry="">     
           </a-plane>
@@ -361,7 +387,7 @@
         <a-image position="2.98135 3.38595 -181.41151" rotation="-1.3263972957278558 -25.614078231323454 1.4902632251352712" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="3.16687 4.64426 -181.5242" scale="0.43215 0.39 1" text="value: Art and Philanthropy; height: 2; lineHeight: 1.33; width: 25.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
 
-
+        <a-entity cursor-listener="src: #artreal">
         <a-image position="2.2323 6.64426 -186.5242" src="#art1" material="" geometry="" scale="4 2 2"></a-image>
         <a-image position="-2.16893 6.66979 -186.5242" src="#art2" material="" geometry="" scale="4 2 2"></a-image>
         <a-image position="-6.48998 6.64426 -186.5242" src="#art3" material="" geometry="" scale="4 2 2"></a-image>
@@ -371,9 +397,10 @@
         <a-image position="2.22018 2.0347 -186.5242" src="#art7" material="" geometry="" scale="4 2 2"></a-image>
         <a-image position="-2.13962 2.00818 -186.5242" src="#art8" material="" geometry="" scale="4 2 2"></a-image>
         <a-image position="-6.4607 1.98501 -186.5242" src="#art9" material="" geometry="" scale="4 2 2"></a-image>
-
+        </a-entity>
         <a-entity position="-1.91301 8.38912 -186.5242" scale="0.43215 0.39 1" text="value: Art advisory: a real investment; height: 2; lineHeight: 1.33; width: 25.19; color: #000000; opacity: 2; align: center"></a-entity>
 
+        <a-entity cursor-listener="src: #philantrophy">
         <a-entity position="-2.52622 5.28427 -192.36" "="" scale="0.43215 0.39 1" text="value: Philanthropy: giving your wealth a purpose; height: 2; lineHeight: 1.33; width: 15.19; color: #000000; opacity: 2; align: center; tabSize: 5"></a-entity>
         <a-image position="-4.76379 4.23097 -192.35962" src="#phil1" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="-0.294 4.231 -192.36" scale="0.43215 0.39 1" text="value: Strong presence in Asia and Africa; height: 2; lineHeight: 1.33; width: 15.19; color: #000000; opacity: 2; wrapCount: 60"></a-entity>
@@ -381,7 +408,8 @@
         <a-entity position="-0.294 2.8409 -192.36" scale="0.43215 0.39 1" text="value: Our UK team administers charitable legal structures; height: 2; lineHeight: 1.33; width: 15.19; color: #000000; opacity: 2; wrapCount: 60"></a-entity>
         <a-image position="-4.76379 1.4409 -192.35962" src="#phil3" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="-0.83972 1.4409 -192.36"  scale="0.43215 0.39 1" text="value: Some 70 projects have been supported since it's outset in 2009; height: 2; lineHeight: 1.33; width: 15.19; color: #000000; opacity: 2; align: center; wrapCount: 60"></a-entity>
-
+        </a-entity>
+		
         <a-image position="-2.868 0.47089 -196.38767" src="#thanks" material="" geometry="" scale="4 3 3" rotation="-86.73664285808455 17.541102897930152 -17.00309552830231"></a-image>
 
 
