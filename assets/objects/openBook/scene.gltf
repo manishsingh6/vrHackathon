@@ -1,0 +1,351 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 76,
+      "max": [
+        0.81000006198883057,
+        0.45000007748603821,
+        0.032187499105930328
+      ],
+      "min": [
+        -0.81000006198883057,
+        -0.45000007748603821,
+        -0.00031249970197677612
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 912,
+      "componentType": 5126,
+      "count": 76,
+      "max": [
+        0.57735025882720947,
+        0.81068402528762817,
+        0.72028982639312744
+      ],
+      "min": [
+        -0.57735025882720947,
+        -0.81068402528762817,
+        -0.75675487518310547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 76,
+      "max": [
+        0.99999988079071045,
+        0.41638487577438354,
+        0.81644219160079956,
+        1
+      ],
+      "min": [
+        -0.99991911649703979,
+        -0.41388726234436035,
+        -0.81649643182754517,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 276,
+      "max": [
+        75
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1824,
+      "componentType": 5126,
+      "count": 1712,
+      "max": [
+        6.1770381927490234,
+        3.2500007152557373,
+        2.1192052364349365
+      ],
+      "min": [
+        -6.2270383834838867,
+        -3.2499997615814209,
+        -0.00020759724429808557
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 22368,
+      "componentType": 5126,
+      "count": 1712,
+      "max": [
+        0.99996435642242432,
+        0,
+        0.99998414516448975
+      ],
+      "min": [
+        -0.99997580051422119,
+        0,
+        0.0069582639262080193
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1216,
+      "componentType": 5126,
+      "count": 1712,
+      "max": [
+        -0.0069582634605467319,
+        2.0066729121026583e-05,
+        0.99996435642242432,
+        1
+      ],
+      "min": [
+        -0.99998414516448975,
+        -1.8574630303191952e-05,
+        -0.99997580051422119,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1104,
+      "componentType": 5125,
+      "count": 4920,
+      "max": [
+        1711
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "theJamieAnne (https://sketchfab.com/theJamieAnne)",
+      "license": "CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)",
+      "source": "https://sketchfab.com/models/6040d92bf9c04432b55eef2272460c00",
+      "title": "Open book"
+    },
+    "generator": "Sketchfab-3.18.7",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 20784,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 42912,
+      "byteOffset": 20784,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 28608,
+      "byteOffset": 63696,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 92304,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.62045858740000004,
+            0.5462386159,
+            0.45119586709999998,
+            1
+          ],
+          "glossinessFactor": 0.25,
+          "specularFactor": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        }
+      },
+      "name": "RootNode"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Book__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Pages__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TANGENT": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "a132fbd570f24c9eb2d6a4c7a0e427e9.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        6
+      ],
+      "matrix": [
+        400,
+        0,
+        0,
+        0,
+        0,
+        -6.5168271756732565e-05,
+        -399.99999999999471,
+        0,
+        0,
+        399.99999999999471,
+        -6.5168271756732565e-05,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Book"
+    },
+    {
+      "mesh": 0,
+      "name": "Book__0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        -0.12499999999999861,
+        1.8874474887229637e-08,
+        0,
+        0,
+        -1.8874474887229637e-08,
+        -0.12499999999999861,
+        3.3087224502121096e-24,
+        0,
+        4.996031903627309e-31,
+        3.3087224502120721e-24,
+        0.125,
+        0,
+        -3.7252902984619141e-09,
+        4.1359030627651384e-25,
+        0.019687499850988388,
+        1
+      ],
+      "name": "Pages"
+    },
+    {
+      "mesh": 1,
+      "name": "Pages__0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
