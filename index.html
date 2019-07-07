@@ -101,13 +101,14 @@
         <a-asset-item id="book" src="assets/objects/book/scene.gltf"></a-asset-item\>
         <a-asset-item id="balloon" src="assets/objects/balloon/scene.gltf"></a-asset-item\>
           <a-asset-item id="lion" src="assets/objects/lion/scene.gltf"></a-asset-item\>
+            <!--a-asset-item id="persianGate" src="assets/objects/persianGate/scene.gltf"></a-asset-item\-->
   </a-assets>
   
-<a-entity id="rig" progressive-controls look-controls wasd-controls="acceleration: 50" movement-controls="" position-listener="" position="0 0 0" rotation="" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
-              <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position=".5 1.6 0" rotation="">
-                  <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: white; shader: flat" raycaster="far:20">
-                </a-entity>
-              </a-entity>
+<a-entity id="rig" progressive-controls look-controls wasd-controls="acceleration: 100" movement-controls="" position-listener="" position="0 0 0" rotation="" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
+  <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3.0 1.6 2" rotation="">
+    <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: white; shader: flat" raycaster="far:20">
+     </a-entity>
+  </a-entity>
           
 </a-entity>
 
@@ -130,10 +131,11 @@
         <!--a-plane material="src:#plane; repeat: 1 20; opacity: 0.55;metalness:0.5"" position="0 0.554 -4" rotation="-90 0 0" width="4" height="4" geometry="" scale="1.828 20.42159 1.31658"></a-plane-->
     
         <!--a-entity gltf-model="#bench" position="-5.30765 -0.67113 -5.993" rotation="0 63.587 0" ></a-entity-->
-        <a-entity gltf-model="#bridge" position="-1.332 0.887 -15.905" rotation="-0.048 35.658 1.689" scale=" 1 0.574 1.293"></a-entity>
-        <a-entity gltf-model="#statueLiberty" position="-3.290 1.292 -1.477" rotation="1.189 -137.978 -5.653" scale=" 1 0.574 1.293"></a-entity>
-        <a-entity gltf-model="#statueLiberty" position="3.359 1.593 -1.310" rotation="1.856 -175.501 1.839" scale=" 1 0.574 1.293"></a-entity>
-        <a-entity cursor-listener="src:#welcome" gltf-model="#phoenix" position="0.07226 1.99047 -9.29074" rotation="3.1661647758929288 -84.03228206506705 -27.7787127813277" scale="0.005 0.005 0.005" animation-mixer=""> </a-entity>
+        <!--a-entity gltf-model="assets/objects/persianGate/scene.gltf" position="-4.61874 6.04391 -15.21451" rotation="0 7.342454144601499 0" scale="0.6 0.6 0.6"></a-entity-->
+        <!--a-entity gltf-model="#bridge2" position="0 0 0" rotation="0 0 0" scale="1 1 1"></a-entity-->
+        <a-entity gltf-model="assets/objects/statueLiberty/model.gltf" position="-6.68502 0.39119 -2.467" rotation="1.1888874248964583 -119.67369466897503 -5.652801606760701" scale="1 0.574 1.293"></a-entity>
+        <a-entity gltf-model="assets/objects/statueLiberty/model.gltf" position="-0.09205 0.44647 -3.86444" rotation="0.4795656745244991 144.6649677769913 -0.103705360918679" scale="1 0.574 1.293"></a-entity>
+        <a-entity cursor-listener="src:#welcome" gltf-model="assets/objects/phoenix/scene.gltf" position="-2.88372 1.99047 -5.86844" rotation="3.1661647758929288 -93.70782035144127 -27.7787127813277" scale="0.005 0.005 0.005" animation-mixer=""> </a-entity>
         <a-entity gltf-model="#dragon" position="0.51019 3.79588 -25.79874" rotation="26.647121135944328 -36.81081946377 -31.581433667610977" scale="0.01 0.01 0.01" animation-mixer=""> </a-entity>
         <a-entity light="type:spot;intensity:0.6;decay:5" position="-1.73168 3.03005 -22.17939"></a-entity>
 
@@ -149,22 +151,22 @@
           
          </a-entity>
         <!--a-cylinder position="-1.332 0.887 -15.905" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder-->
-        <a-cylinder position="-4.29748 4.835 -5.50969" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive: sphere"></a-cylinder>
-        <a-cylinder position="4.26263 4.685 -4.97041" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive: sphere"></a-cylinder>
-        <a-cylinder position="0.19412 4.806 -5.53188" radius="0.5" height="1.5" color="#FFC65D" scale="9.234 1 1" material="" geometry="primitive: triangle"></a-cylinder>
-        <a-sphere position="0.20442 5.63164 -5.1624" radius="0.5" height="1.5" color="#eeff92" material="" geometry=""></a-sphere>
-        <a-entity gltf-model="#pillar" position="-4.149 0.635 -5.752" rotation="1.693 -75.415 -3.016" scale="0.5 0.5 0.310"></a-entity>
-        <a-entity gltf-model="#pillar" position="4.567 0.635 -5.407" rotation="1.693 -105.927 -3.016" scale="0.5 0.5 0.310"></a-entity>
+        <a-cylinder position="-6.8002 4.69372 -5.25692" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive:sphere"></a-cylinder>
+        <a-cylinder position="1.17578 4.62676 -4.97041" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive:sphere"></a-cylinder>
+        <a-cylinder position="-2.81789 4.806 -5.53188" radius="0.5" height="1.5" color="#FFC65D" scale="9.234 1 1" material="" geometry="primitive:triangle"></a-cylinder>
+        <a-sphere position="-2.80784 5.63164 -5.1624" radius="0.5" height="1.5" color="#eeff92" material="" geometry=""></a-sphere>
+        <a-entity gltf-model="assets/objects/pillar/pillar.gltf" position="-6.67404 0.635 -5.752" rotation="1.693 -75.415 -3.016" scale="0.5 0.5 0.31"></a-entity>
+        <a-entity gltf-model="assets/objects/pillar/pillar.gltf" position="1.4613 0.635 -5.752" rotation="1.693 -105.927 -3.016" scale="0.5 0.5 0.31"></a-entity>
       
       
-        <a-entity position="0.19744 4.85643 -5.53188" text="font: assets/Roboto-msdf.json;value: Welcome to Societe Generale; align: center; height: 2; lineHeight: 1.33; width: 4.19; opacity: 2"></a-entity>
-        <a-entity position="0.23549 4.63103 -5.53188" text="font: assets/Roboto-msdf.json;value: Private Banking; align: center; height: 2; lineHeight: 1.33; width: 4.19;opacity: 2"></a-entity>
+        <a-entity position="-2.85012 4.85643 -5.53188" text="font:assets/Roboto-msdf.json;value:Welcome to Societe Generale;align:center;height:2;lineHeight:1.33;width:4.19;opacity:2"></a-entity>
+        <a-entity position="-2.8504 4.63103 -5.53188" text="font:assets/Roboto-msdf.json;value:Private Banking;align:center;height:2;lineHeight:1.33;width:4.19;opacity:2"></a-entity>
 
         <!--a-image position="-1.508 4.7179 -14.96186" scale="5.252 1 1" rotation="0 -7.675 0.368" src="#logo" material="" geometry=""></a-image-->
-        <a-entity position="0.23734 1.05494 -5.53188" rotation="-74.994 0 0" text="font: assets/Roboto-msdf.json;value: WE MANAGE YOUR WEALTH; align: center; height: 2; lineHeight: 1.33; width: 8.19;color: #ffbe31;"></a-entity>
-        <a-entity position="0.425 1.05494 -4.169" rotation="-74.994 0 0" text="font: assets/Roboto-msdf.json;value: SO YOU CAN ENJOT IT; align: center; height: 2; lineHeight: 1.33; width: 8.19;color: #ffffff;"></a-entity>
+        <a-entity position="-2.79788 0.07211 -5.53188" rotation="-74.994 0 0" text="font:assets/Roboto-msdf.json;value:WE MANAGE YOUR WEALTH;align:center;height:2;lineHeight:1.33;width:12;color:#ffbe31"></a-entity>
+        <a-entity position="-2.7584 0.05511 -4.169" rotation="-74.994 0 0" text="font:assets/Roboto-msdf.json;value:SO YOU CAN ENJOT IT;align:center;height:2;lineHeight:1.33;width:8.19;color:#ffffff"></a-entity>
         
-        <a-entity position="0.83036 0.97946 -1.63807" scale="0.710 0.737 1" rotation="-74.994 0 0" text="font: assets/Roboto-msdf.json;value: YOUR BRIDGE TO SUCCESS; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffbe31"></a-entity>
+        <a-entity position="-2.7255 0.07267 -2.02218" scale="0.71 0.737 1" rotation="-74.994 0 0" text="font:assets/Roboto-msdf.json;value:YOUR BRIDGE TO SUCCESS;align:center;height:2;lineHeight:1.33;width:8.19;color:#ffbe31"></a-entity>
         <a-entity gltf-model="#tree" position="-7.54023 6.73069 -31.32094" scale="1.630 1.709 1"></a-entity>
         <a-entity gltf-model="#stone" position="-6.64085 1.58139 -31.32094" scale="1.63 1.709 1"></a-entity>
         <!--a-entity gltf-model="#world" position="-6.64085 1.58139 -25.32094" scale="1.63 1.709 1"></a-entity-->
