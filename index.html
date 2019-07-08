@@ -514,6 +514,51 @@ AFRAME.registerComponent('cursor-listener', {
       }
     });
 </script>
-
+ <!--<script>
+  
+AFRAME.registerComponent('cursor-listener', {
+    schema: {
+        src: {type: 'string'}
+      },
+      init: function () {
+        let audio = document.querySelector(this.data.src+window.language);
+        this.el.addEventListener('click', playIfFree);
+        this.el.addEventListener('mouseenter', playIfFree);
+        audio.addEventListener('ended', function () {
+          window.isPlaying = false
+        })
+        function playIfFree () {
+		  if(!audio.id.includes(window.language)) {
+		   var rep = audio.id.substr(audio.id.length-3);
+		   var id = audio.id.replace(rep,window.language);
+		   audio = document.querySelector("#"+id);
+		   audio.addEventListener('ended', function () {
+           window.isPlaying = false
+        })
+		   window.isPlaying = false;
+		  
+		  }
+          if(!window.isPlaying) {
+            audio.play();
+            window.isPlaying = true
+          } else {
+            return false
+          }
+        }
+      }
+    });
+</script>
+<script>
+  
+AFRAME.registerComponent('language-listener', {
+  init: function () {
+    this.el.addEventListener('click', function (evt) {
+	window.language=evt.srcElement.getAttribute("language-listener").lan;
+	
+    
+    });
+  }
+});
+</script>-->
   </body>
 </html>
