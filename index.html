@@ -3,19 +3,30 @@
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	 <script src="https://cdn.jsdelivr.net/npm/three-vrcontrols@1.0.0/VRControls.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/three-vrcontrols@1.0.0/VRControls.min.js"></script>
         <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.js"></script>
   </head>
   <body>
     <a-scene>
       <a-assets>
+        <a-asset-item id="statueLiberty" src="assets/objects/statueLiberty/model.gltf"></a-asset-item>
+        <a-asset-item id="terrain1" src="assets/objects/landscape2/scene.gltf"></a-asset-item\>
+              <a-asset-item id="phoenix" src="assets/objects/phoenix/scene.gltf"></a-asset-item>
+        <a-asset-item id="paperPlane" src="assets/objects/paperPlane/scene.gltf"></a-asset-item\>
+         <a-asset-item id="stoneBlock" src="assets/objects/stoneBlock/scene.gltf"></a-asset-item\>
+        <a-asset-item id="book" src="assets/objects/book/scene.gltf"></a-asset-item\>
+        <a-asset-item id="balloon" src="assets/objects/balloon/scene.gltf"></a-asset-item\>
+          <a-asset-item id="lion" src="assets/objects/lion/scene.gltf"></a-asset-item\>
+
+         <a-asset-item id="dragon" src="assets/objects/dragon/scene.gltf"></a-asset-item>
+         <a-asset-item id="question" src="assets/objects/question/scene.gltf"></a-asset-item>
+
         <!--img id="sky" src="/assets/images/aerial 360 vr panorama - 8000x4000.jpg">
         <img id="plane" src="/assets/images/pool_water_texture_190317.jpg">
         <img id="logo" src="/assets/images/societe-generale-logo.png"-->
         <img id="road2" src="assets/images/road2.png">
         <img id="luxFlag" src="assets/images/luxFlag.jpg">
         <img id="leftArrow" src="assets/images/arrow-25838_960_720.png">
-        <img id="fiduciaryServices" src="assets/images/fiduciaryServices.jpeg">
         <img id="successionPlanning" src="assets/images/successionPlanning.jpg">
         <img id="lifeInsurance" src="assets/images/lifeInsurance.jpg">
 
@@ -38,14 +49,18 @@
         <img id="phil3" src="assets/images/phil3.jpg">
         <img id="thanks" src="assets/images/thanks.png">
         <img id="profit1" src="assets/images/profit1.gif">
+        <img id="fiduciaryServices" src="assets/images/fiduciaryServices.png">
+        <img id="sphereTexture1" src="assets/images/sphereTexture1.png">
+        <img id="sphereTexture2" src="assets/images/sphereTexture2.jpg">
+        <img id="sphereTexture3" src="assets/images/sphereTexture3.jpeg">
 
         <audio id="why_en" src="assets/sounds/why_en.mp3" preload="auto"></audio>
 
-		<audio id="welcome" src="assets/sounds/welcomespeech_male_en.mp3" preload="auto"></audio>
-		<audio id="keyfigures2017" src="assets/sounds/keyfigures_male_en.mp3" preload="auto"></audio>
-		<audio id="bespoke" src="assets/sounds/bespokeapproach_male_en.mp3" preload="auto"></audio>
-		
-		<audio id="welcome_en" src="assets/sounds/welcomespeech_male_en.mp3" preload="auto"></audio>
+    <audio id="welcome" src="assets/sounds/welcomespeech_male_en.mp3" preload="auto"></audio>
+    <audio id="keyfigures2017" src="assets/sounds/keyfigures_male_en.mp3" preload="auto"></audio>
+    <audio id="bespoke" src="assets/sounds/bespokeapproach_male_en.mp3" preload="auto"></audio>
+    
+    <audio id="welcome_en" src="assets/sounds/welcomespeech_male_en.mp3" preload="auto"></audio>
     <audio id="welcome_fr" src="assets/sounds/welcomespeech_male_fr.mp3" preload="auto"></audio>
     <audio id="keyfigures2017_en" src="assets/sounds/keyfigures_male_en.mp3" preload="auto"></audio>
     <audio id="keyfigures2017_fr" src="assets/sounds/keyfigures_male_fr.mp3" preload="auto"></audio>
@@ -68,9 +83,9 @@
     <audio id="corporateequity_en" src="assets/sounds/corporateequity_male_en.mp3" preload="auto"></audio>
     <audio id="corporateequity_fr" src="assets/sounds/corporateequity_male_fr.mp3" preload="auto"></audio>
 
-        <a-asset-item id="bench" src="assets/objects/bench/model.gltf"></a-asset-item>
-        <a-asset-item id="statueLiberty" src="assets/objects/statueLiberty/model.gltf"></a-asset-item>
-        <a-asset-item id="bridge" src="assets/objects/bridge/puente_papelera.gltf"></a-asset-item>
+        <!--a-asset-item id="bench" src="assets/objects/bench/model.gltf"></a-asset-item-->
+        
+        <!--a-asset-item id="bridge" src="assets/objects/bridge/puente_papelera.gltf"></a-asset-item-->
         <a-asset-item id="pillar" src="assets/objects/pillar/pillar.gltf"></a-asset-item>
         <a-asset-item id="block" src="assets/objects/block/stone_block_007.gltf"></a-asset-item>
         <a-asset-item id="boulder" src="assets/objects/boulder/PUSHILIN_boulder.gltf"></a-asset-item>
@@ -92,22 +107,17 @@
          <a-asset-item id="crowd" src="assets/objects/crowd/model.gltf"></a-asset-item>
          <a-asset-item id="cashPile" src="assets/objects/cashPile/Money.gltf"></a-asset-item>
          <a-asset-item id="fountain" src="assets/objects/fountain/PUSHILIN_fountain.gltf"></a-asset-item>
-         <a-asset-item id="phoenix" src="assets/objects/phoenix/scene.gltf"></a-asset-item>
-         <a-asset-item id="dragon" src="assets/objects/dragon/scene.gltf"></a-asset-item>
-         <a-asset-item id="question" src="assets/objects/question/scene.gltf"></a-asset-item>
+         
          <a-asset-item id="magicRing" src="assets/objects/magicRing/scene.gltf"></a-asset-item>
-         <a-asset-item id="paperPlane" src="assets/objects/paperPlane/scene.gltf"></a-asset-item\>
-         <a-asset-item id="stoneBlock" src="assets/objects/stoneBlock/scene.gltf"></a-asset-item\>
-        <a-asset-item id="book" src="assets/objects/book/scene.gltf"></a-asset-item\>
-        <a-asset-item id="balloon" src="assets/objects/balloon/scene.gltf"></a-asset-item\>
-          <a-asset-item id="lion" src="assets/objects/lion/scene.gltf"></a-asset-item\>
+         
+            <!--a-asset-item id="persianGate" src="assets/objects/persianGate/scene.gltf"></a-asset-item\-->
   </a-assets>
   
-<a-entity id="rig" progressive-controls look-controls wasd-controls="acceleration: 2" movement-controls="" position-listener="" position="0 0 0" rotation="" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
-              <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position=".5 1.6 0" rotation="">
-                  <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: white; shader: flat" raycaster="far:20">
-                </a-entity>
-              </a-entity>
+<a-entity id="rig" progressive-controls look-controls wasd-controls="acceleration: 100" movement-controls="" position-listener="" position="0 0 0" rotation="" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
+  <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3.0 4.4 -5" rotation="">
+    <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: white; shader: flat" raycaster="far:20">
+     </a-entity>
+  </a-entity>
           
 </a-entity>
 
@@ -130,14 +140,20 @@
         <!--a-plane material="src:#plane; repeat: 1 20; opacity: 0.55;metalness:0.5"" position="0 0.554 -4" rotation="-90 0 0" width="4" height="4" geometry="" scale="1.828 20.42159 1.31658"></a-plane-->
     
         <!--a-entity gltf-model="#bench" position="-5.30765 -0.67113 -5.993" rotation="0 63.587 0" ></a-entity-->
-        <a-entity gltf-model="#bridge" position="-1.332 0.887 -15.905" rotation="-0.048 35.658 1.689" scale=" 1 0.574 1.293"></a-entity>
-        <a-entity gltf-model="#statueLiberty" position="-3.290 1.292 -1.477" rotation="1.189 -137.978 -5.653" scale=" 1 0.574 1.293"></a-entity>
-        <a-entity gltf-model="#statueLiberty" position="3.359 1.593 -1.310" rotation="1.856 -175.501 1.839" scale=" 1 0.574 1.293"></a-entity>
-        <a-entity cursor-listener ="src: #welcome; " gltf-model="#phoenix" position="0.07226 1.99047 -6.031" rotation="3.1661647758929288 -84.03228206506705 -27.7787127813277" scale="0.005 0.005 0.005" animation-mixer=""> </a-entity>
+        <!--a-entity gltf-model="assets/objects/persianGate/scene.gltf" position="-4.61874 6.04391 -15.21451" rotation="0 7.342454144601499 0" scale="0.6 0.6 0.6"></a-entity-->
+        <!--a-entity gltf-model="#bridge2" position="0 0 0" rotation="0 0 0" scale="1 1 1"></a-entity-->
+        <a-entity gltf-model="#terrain1" position="-120.77569 2.06893 -66.45981" rotation="2.9816723658608044 45.17886806165567 -0.7179161172989215" scale="0.03 0.03 0.03"></a-entity>
+        <a-entity gltf-model="#terrain1" position="98.25712 -4.64112 -66.45981" rotation="-3.837098353991123 -7.120719477885872 -3.5569219921721507" scale="0.03 0.03 0.08"></a-entity>
+
+
+
+        <a-entity gltf-model="#statueLiberty" position="-6.68502 0.39119 -12.467" rotation="1.1888874248964583 -119.67369466897503 -5.652801606760701" scale="1 0.574 1.293"></a-entity>
+        <a-entity gltf-model="#statueLiberty" position="-0.09205 0.44647 -13.86444" rotation="0.4795656745244991 144.6649677769913 -0.103705360918679" scale="1 0.574 1.293"></a-entity>
+        <a-entity cursor-listener="src:#welcome" gltf-model="#phoenix" position="-2.88372 1.99047 -15.86844" rotation="3.1661647758929288 -93.70782035144127 -27.7787127813277" scale="0.005 0.005 0.005" animation-mixer=""> </a-entity>
         <a-entity gltf-model="#dragon" position="0.51019 3.79588 -25.79874" rotation="26.647121135944328 -36.81081946377 -31.581433667610977" scale="0.01 0.01 0.01" animation-mixer=""> </a-entity>
         <a-entity light="type:spot;intensity:0.6;decay:5" position="-1.73168 3.03005 -22.17939"></a-entity>
 
-        <a-entity  cursor-listener ="src: #why; " gltf-model="assets/objects/question/scene.gltf" rotation="-4.831180128543102 131.34541791358504 2.726706147027588" scale="0.01 0.01 0.01">
+        <a-entity  cursor-listener ="src: #why; " gltf-model="#question" rotation="-4.831180128543102 131.34541791358504 2.726706147027588" scale="0.01 0.01 0.01">
             <a-animation attribute="position"
                  dur="1500"
                  from="-2.69328 2.582 -25.79874"
@@ -149,33 +165,33 @@
           
          </a-entity>
         <!--a-cylinder position="-1.332 0.887 -15.905" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder-->
-        <a-cylinder position="-4.29748 4.835 -5.50969" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive: sphere"></a-cylinder>
-        <a-cylinder position="4.26263 4.685 -4.97041" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive: sphere"></a-cylinder>
-        <a-cylinder position="0.19412 4.806 -5.53188" radius="0.5" height="1.5" color="#FFC65D" scale="9.234 1 1" material="" geometry="primitive: triangle"></a-cylinder>
-        <a-sphere position="0.20442 5.63164 -5.1624" radius="0.5" height="1.5" color="#eeff92" material="" geometry=""></a-sphere>
-        <a-entity gltf-model="#pillar" position="-4.149 0.635 -5.752" rotation="1.693 -75.415 -3.016" scale="0.5 0.5 0.310"></a-entity>
-        <a-entity gltf-model="#pillar" position="4.567 0.635 -5.407" rotation="1.693 -105.927 -3.016" scale="0.5 0.5 0.310"></a-entity>
+        <a-cylinder position="-6.8002 4.69372 -15.25692" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive:sphere"></a-cylinder>
+        <a-cylinder position="1.17578 4.62676 -14.97041" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive:sphere"></a-cylinder>
+        <a-cylinder position="-2.81789 4.806 -15.53188" radius="0.5" height="1.5" color="#FFC65D" scale="9.234 1 1" material="" geometry="primitive:triangle"></a-cylinder>
+        <a-sphere position="-2.80784 5.63164 -15.1624" radius="0.5" height="1.5" color="#eeff92" material="" geometry=""></a-sphere>
+        <a-entity gltf-model="#pillar" position="-6.67404 0.635 -15.752" rotation="1.693 -75.415 -3.016" scale="0.5 0.5 0.31"></a-entity>
+        <a-entity gltf-model="#pillar" position="1.4613 0.635 -15.752" rotation="1.693 -105.927 -3.016" scale="0.5 0.5 0.31"></a-entity>
       
       
-        <a-entity position="0.19744 4.85643 -5.53188" text="font: assets/Roboto-msdf.json;value: Welcome to Societe Generale; align: center; height: 2; lineHeight: 1.33; width: 4.19; opacity: 2"></a-entity>
-        <a-entity position="0.23549 4.63103 -5.53188" text="font: assets/Roboto-msdf.json;value: Private Banking; align: center; height: 2; lineHeight: 1.33; width: 4.19;opacity: 2"></a-entity>
+        <a-entity position="-2.85012 4.85643 -15.53188" text="font:assets/Roboto-msdf.json;value:Welcome to Societe Generale;align:center;height:2;lineHeight:1.33;width:4.19;opacity:2"></a-entity>
+        <a-entity position="-2.8504 4.63103 -15.53188" text="font:assets/Roboto-msdf.json;value:Private Banking;align:center;height:2;lineHeight:1.33;width:4.19;opacity:2"></a-entity>
 
         <!--a-image position="-1.508 4.7179 -14.96186" scale="5.252 1 1" rotation="0 -7.675 0.368" src="#logo" material="" geometry=""></a-image-->
-        <a-entity position="0.23734 1.05494 -5.53188" rotation="-74.994 0 0" text="font: assets/Roboto-msdf.json;value: WE MANAGE YOUR WEALTH; align: center; height: 2; lineHeight: 1.33; width: 8.19;color: #ffbe31;"></a-entity>
-        <a-entity position="0.425 1.05494 -4.169" rotation="-74.994 0 0" text="font: assets/Roboto-msdf.json;value: SO YOU CAN ENJOT IT; align: center; height: 2; lineHeight: 1.33; width: 8.19;color: #ffffff;"></a-entity>
+        <a-entity position="-2.79788 0.44233 -15.53188" rotation="-74.994 0 0" text="font:assets/Roboto-msdf.json;value:WE MANAGE YOUR WEALTH;align:center;height:2;lineHeight:1.33;width:12;color:#ffbe31"></a-entity>
+        <a-entity position="-2.7584 0.34707 -14.169" rotation="-74.994 0 0" text="font:assets/Roboto-msdf.json;value:SO YOU CAN ENJOT IT;align:center;height:2;lineHeight:1.33;width:8.19;color:#ffffff"></a-entity>
         
-        <a-entity position="0.83036 0.97946 -1.63807" scale="0.710 0.737 1" rotation="-74.994 0 0" text="font: assets/Roboto-msdf.json;value: YOUR BRIDGE TO SUCCESS; align: center; height: 2; lineHeight: 1.33; width: 8.19; color: #ffbe31"></a-entity>
-        <a-entity gltf-model="#tree" position="-7.54023 6.73069 -31.32094" scale="1.630 1.709 1"></a-entity>
-        <a-entity gltf-model="#stone" position="-6.64085 1.58139 -31.32094" scale="1.63 1.709 1"></a-entity>
+        <a-entity position="-2.7255 0.5209 -11.92663" scale="0.71 0.737 1" rotation="-74.994 0 0" text="font:assets/Roboto-msdf.json;value:YOUR ROAD TO SUCCESS;align:center;height:2;lineHeight:1.33;width:12;color:#ffbe31"></a-entity>
+        <a-entity gltf-model="#tree" position="-7.54023 5.95678 -31.32094" scale="1.63 1.709 1"></a-entity>
+        <a-entity gltf-model="#stone" position="-9.1303 0.77833 -31.32094" scale="1.63 1.709 1"></a-entity>
         <!--a-entity gltf-model="#world" position="-6.64085 1.58139 -25.32094" scale="1.63 1.709 1"></a-entity-->
-        <a-entity position="-6.489 1.347 -30.787" scale="0.24877 0.89 1" text="font:assets/Roboto-msdf.json;value:Tree of recognition;align:center;height:2;lineHeight:1.33;width:14;wrapCount:50;color:#ffda26;opacity:2"></a-entity>
-        <a-entity gltf-model="#tree" position="-0.050 6.73069 -31.32094" rotation="180.000 6.835 180.000" scale="1.630 1.709 1"></a-entity>
+        <a-entity position="-8.97613 0.51795 -30.787" scale="0.24877 0.89 1" text="font:assets/Roboto-msdf.json;value:Tree of recognition;align:center;height:2;lineHeight:1.33;width:14;wrapCount:50;color:#ffda26;opacity:2"></a-entity>
+        <a-entity gltf-model="#tree" position="1.6909 6.40383 -31.32094" rotation="180 6.835 180" scale="1.63 1.709 1"></a-entity>
         
-        <a-entity position="-3.82238 12.08435 -31.235" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Private Bank for Entrepreneurs in Western Europe;align:center;height:2;lineHeight:1.33;width:16;color:#131313;opacity:3;wrapCount:50"></a-entity>
+        <a-entity position="-3.82238 14.08435 -36.235" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Private Bank for Entrepreneurs in Western Europe;align:center;height:2;lineHeight:1.33;width:20;color:#131313;opacity:3;wrapCount:50"></a-entity>
         
-        <a-entity position="-3.65165 11.49588 -31.235" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Outstanding Private Bank for Next Generation Proposition;align:center;height:2;lineHeight:1.33;width:16;color:#131313;opacity:3;wrapCount:50"></a-entity>
-        <a-entity position="-3.65165 10.26034 -31.47322" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Credit Provider;align:center;height:2;lineHeight:1.33;width:16;color:#131313;opacity:3;wrapCount:50"></a-entity>
-        <a-entity position="-3.69535 10.93516 -31.47322" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Wealth Planning Team;align:center;height:2;lineHeight:1.33;width:16;wrapCount:50;color:#131313;opacity:3"></a-entity>
+        <a-entity position="-3.65165 13.49588 -36.235" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Outstanding Private Bank for Next Generation Proposition;align:center;height:2;lineHeight:1.33;width:20;color:#131313;opacity:3;wrapCount:50"></a-entity>
+        <a-entity position="-3.65165 12.26034 -36.47322" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Credit Provider;align:center;height:2;lineHeight6:1.33;width:20;color:#131313;opacity:3;wrapCount:50"></a-entity>
+        <a-entity position="-3.69535 12.93516 -36.47322" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Wealth Planning Team;align:center;height:2;lineHeight:1.33;width:20;wrapCount:50;color:#131313;opacity:3"></a-entity>
         <!--a-entity gltf-model="#swan" position="0.96568 -0.1435 -35.16213" rotation="-0.372 -90.000 0" scale="0.5 0.5 0.31"></a-entity-->
         <a-entity gltf-model="#book" position="5.97086 2.71773 -42.25459" rotation="-0.37184960903990427 -58.78031316026629 0" scale="0.01 0.01 0.01"></a-entity>
         <a-entity position="5.87662 5.00332 -42.12679" scale="0.43215 0.89 1" text="value:3 Step Bespoke Approach;align:center;height:2;lineHeight:1.33;width:14;color:#ffda26;opacity:2" rotation="-29.114277401777652 -58.69035878643075 1.2450372888192789"></a-entity>
@@ -185,9 +201,9 @@
         <a-entity position="3.63697 1.13395 -40.65414" scale="0.43215 0.89 1" text="value:By SGBT;align:center;height:2;lineHeight:1.33;width:18;color:#ffda26;opacity:2" rotation="-29.114277401777652 -58.69035878643075 1.2450372888192789"></a-entity>
         <!--a-entity gltf-model="#elephant" position="-17.04593 15.086 -56.0193" rotation="-0.6096270940191959 127.3794040556895 0.5168079312080026" scale="0.2 0.2 0.2"></a-entity-->
         <a-entity cursor-listener="src: #luxWelcome; ">
-        <a-entity  gltf-model="assets/objects/lion/scene.gltf" position="-1.88354 4.23386 -46.54621" rotation="-8.464305507467651 69.00302614099043 -9.020647526539681" scale="5 5 5"></a-entity>
+        <a-entity  gltf-model="#lion" position="-1.88354 4.23386 -46.54621" rotation="-8.464305507467651 69.00302614099043 -9.020647526539681" scale="5 5 5"></a-entity>
         <a-cylinder position="2.73979 0.74448 -54.186" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color:#faffea" geometry=""></a-cylinder>
-        <a-entity gltf-model="assets/objects/lion/scene.gltf" position="7.10016 4.50922 -41.03663" rotation="-9.801589001302993 20.285570736606797 -3.6004667846020926" scale="5 5 5"></a-entity>
+        <a-entity gltf-model="#lion" position="7.10016 4.50922 -41.03663" rotation="-9.801589001302993 20.285570736606797 -3.6004667846020926" scale="5 5 5"></a-entity>
         <a-cylinder position="-8.81156 0.73506 -54.186" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color:#faffea" geometry=""></a-cylinder>
         <a-image  position="-3.05543 11.55017 -54.03734" src="#luxFlag" material="" geometry="" scale="11.29889 5 5"></a-image>
       </a-entity>
@@ -196,26 +212,26 @@
         <!--a-entity gltf-model="#paperPlane" position="-10.13915 2.47105 -36.68955" rotation="-1.4289567410562731 -79.32256898909168 0.9144406410287937" scale="0.8 0.8 0.8" animation-mixer></a-entity-->
 
         <!--a-entity cursor-listener sound="src: #keyfigures2017; " gltf-model="#banner" position="-15.13915 2.47105 -36.68955" rotation="-1.4289567410562731 -79.32256898909168 0.9144406410287937" scale="0.8 0.8 0.8"></a-entity-->
-        <a-entity gltf-model="assets/objects/stoneBlock/scene.gltf" position="-13.22335 2.22371 -40.68882" rotation="-25.950404457065247 45.075162700736996 2.5553917662834715" scale="0.04 0.04 0.04"></a-entity>
-        <a-entity position="-12.36323 4.98966 -39.60519" scale="0.43215 0.89 1" text="value:Key figures - 2017;align:center;height:2;lineHeight:1.33;width:18;color:#000000;opacity:2" rotation="-14.172111062560912 46.1162270144897 -1.017573044152342"></a-entity>
-        <a-entity position="-12.36323 3.98966 -39.60519" scale="0.43215 0.89 1" text="value:1094m euros in net banking income;align:center;height:2;lineHeight:1.33;width:12;color:#ffda26;opacity:2" rotation="-14.172111062560912 46.1162270144897 -1.017573044152342"></a-entity>
-        <a-entity position="-11.98449 3.28378 -39.45529" scale="0.43215 0.79 1" text="value:118b euros in assets under management;align:center;height:2;lineHeight:1.33;width:12;color:#ffffff;opacity:2" rotation="-2.2150548359757627 45.039066359643755 -1.302906026127492"></a-entity>
-        <a-entity position="-11.69071 2.6415 -38.87691" scale="0.43215 0.69 1" text="value:11 Countries;align:center;height:2;lineHeight:1.33;width:12;color:#ffda26;opacity:2" rotation="0 44.09540487106329 0"></a-entity>
-        <a-entity position="-11.49451 2.08322 -38.82922" scale="0.43215 0.59 1" text="value:2.500 members of staff worldwide;align:center;height:2;lineHeight:1.33;width:12;color:#ffffff;opacity:2" rotation="-5.740464149415718 44.200256147572226 -1.2685285584196426"></a-entity>
-        <a-entity position="-11.32703 1.54856 -38.59979" scale="0.43215 0.49 1" text="value:600 private bankers at your service;align:center;height:2;lineHeight:1.33;width:12;color:#ffda26;opacity:2" rotation="-7.142491874100843 45.19892158448525 -2.2322435698296874"></a-entity>
-        <a-entity position="-10.95234 1.08788 -38.2289" scale="0.43215 0.39 1" text="value:500 experts at your service;align:center;height:2;lineHeight:1.33;width:12;color:#ffffff;opacity:2" rotation="-9.525996301845067 44.576116461178046 -2.22708694967351"></a-entity>
+        <a-entity gltf-model="#stoneBlock" position="-13.22335 2.22371 -40.68882" rotation="-25.950404457065247 45.075162700736996 2.5553917662834715" scale="0.04 0.04 0.04"></a-entity>
+        <a-entity position="-12.36323 4.98966 -39.60519" scale="0.43215 0.89 1" text="value:Key figures - 2017;align:center;height:2;lineHeight:1.33;width:20;color:#000000;opacity:2" rotation="-14.172111062560912 46.1162270144897 -1.017573044152342"></a-entity>
+        <a-entity position="-12.0469 3.98966 -39.60519" scale="0.43215 0.89 1" text="value:1094m euros in net banking income;align:center;height:2;lineHeight:1.33;width:18;color:#ffda26;opacity:2" rotation="-14.172111062560912 46.1162270144897 -1.017573044152342"></a-entity>
+        <a-entity position="-11.98449 3.28378 -39.45529" scale="0.43215 0.79 1" text="value:118b euros in assets under management;align:center;height:2;lineHeight:1.33;width:18;color:#ffffff;opacity:2" rotation="-2.2150548359757627 45.039066359643755 -1.302906026127492"></a-entity>
+        <a-entity position="-11.69071 2.6415 -38.87691" scale="0.43215 0.69 1" text="value:11 Countries;align:center;height:2;lineHeight:1.33;width:18;color:#ffda26;opacity:2" rotation="0 44.09540487106329 0"></a-entity>
+        <a-entity position="-11.49451 2.08322 -38.82922" scale="0.43215 0.59 1" text="value:2.500 members of staff worldwide;align:center;height:2;lineHeight:1.33;width:18;color:#ffffff;opacity:2" rotation="-5.740464149415718 44.200256147572226 -1.2685285584196426"></a-entity>
+        <a-entity position="-11.32703 1.54856 -38.59979" scale="0.43215 0.49 1" text="value:600 private bankers at your service;align:center;height:2;lineHeight:1.33;width:18;color:#ffda26;opacity:2" rotation="-7.142491874100843 45.19892158448525 -2.2322435698296874"></a-entity>
+        <a-entity position="-10.95234 1.08788 -38.2289" scale="0.43215 0.39 1" text="value:500 experts at your service;align:center;height:2;lineHeight:1.33;width:20;color:#ffffff;opacity:2" rotation="-9.525996301845067 44.576116461178046 -2.22708694967351"></a-entity>
         <!--a-plane material="src:#plane; repeat: 1 20; opacity: 0.55;metalness:0.5"" position="0 0.554 4" rotation="-90 0 0" width="4" height="4" geometry="" scale="1.828 20.42159 1.31658"></a-plane-->
-        <a-plane material="src: #road2; repeat: 1 20; opacity: 1  ; metalness: 0.5" position="-2.85574 0.30376 -71.96947" rotation="-90 0 0" width="4" height="4" geometry="" scale="2.28643 20.42159 61.0368"></a-plane>
+        <a-plane material="src:#road2;repeat:1 20;metalness:0.5" position="-2.85574 0.30376 -63.54744" rotation="-90 0 0" width="4" height="4" geometry="" scale="2.30209 28.24941 61.45483"></a-plane>
 
         <!--a-cylinder position="4.31359 0.5 -56.0193" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #faffea" geometry=""></a-cylinder-->
         
         
-        <a-image position="3.87952 2.78982 -81.08505" src="#fiduciaryServices" material="" geometry="" scale="4 2 2" sound="src: #wealthPlanning;autoplay: true;volume:3"></a-image>
+        <a-image position="3.87952 3.801 -81.085" src="#fiduciaryServices" material="" geometry="" scale="6 4 4" sound="src: #wealthPlanning;autoplay: true;volume:3"></a-image>
         <a-cylinder position="4.0952 -9.31416 -81.69775" radius="0.5" height="1.5" scale="0.11197 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
-        <a-image position="3.87952 2.78982 -86.08505" src="#lifeInsurance" material="" geometry="" scale="4 2 2"></a-image>
-        <a-cylinder position="4.0952 -9.31416 -86.69775" radius="0.5" height="1.5" scale="0.11197 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
+        <a-image position="3.87952 3.63166 -89.45282" src="#lifeInsurance" material="" geometry="" scale="6 4 4"></a-image>
+        <a-cylinder position="4.0952 -9.31416 -89.70556" radius="0.5" height="1.5" scale="0.11197 15.3927 0.34921" material="color:#8d9085" geometry=""></a-cylinder>
 
-        <a-image  position="-12.20532 2.78982 -85.08505" src="#successionPlanning" material="" geometry="" scale="4 2 2"></a-image>
+        <a-image position="-12.20532 3.44034 -85.08505" src="#successionPlanning" material="" geometry="" scale="6 4 4"></a-image>
         <a-cylinder position="-12.42817 -5.75744 -85.69775" radius="0.5" height="1.5" scale="0.10046 11.3393 0.31331" material="color: #8d9085" geometry=""></a-cylinder>
 
 
@@ -223,43 +239,38 @@
         <a-entity gltf-model="#treasure" position="2.74821 -19.57252 -68.86297" scale="10 10 10"></a-entity>
         <a-cylinder position="4.74821 -8.03519 -64.81147" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
         <a-plane position="4.66263 4.89287 -64.45725" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
-        <a-image cursor-listener="src: #wealthoffer;" position="4.8127 4.28337 -63.73708" rotation="0 0 5.441"  src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
+        <a-image cursor-listener="src:#wealthoffer" position="4.8127 4.28337 -63.73708" rotation="0 0 -2.281517940210938" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity cursor-listener ="src: #wealthoffer;" position="4.66103 5.60682 -64.15289" scale="0.43215 0.39 1" text="value: Wealth Planning; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
         <a-entity gltf-model="#pond" position="-32.25212 0.80988 -90.07486" scale="15 15 15"></a-entity>
-        
-		<a-entity cursor-listener ="src: #wealthbenefits;">
-        <a-sphere position="-7.00535 2.71205 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
-		<a-animation begin="click" attribute="rotation" to="0 360 0"
-                   easing="linear" dur="10000" fill="backwards"></a-animation>
-		</a-sphere>
-         <a-entity position="-6.95913 3.84122 -97.32351" scale="0.43215 0.39 1" text="value: A network of 230 experts; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
 
-         <a-sphere position="-5.85667 5.61388 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
-		 <a-animation begin="click" attribute="rotation" to="0 360 0"
-                   easing="linear" dur="10000" fill="backwards"></a-animation>
-		 </a-sphere>
-         <a-entity position="-5.98452 6.73803 -97.32351" scale="0.43215 0.39 1" text="value: A presence in 9 Countries; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
 
-         <a-sphere position="-2.24943 7.45656 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
-		 <a-animation begin="click" attribute="rotation" to="0 360 0"
-                   easing="linear" dur="10000" fill="backwards"></a-animation>
-		 </a-sphere>
-         <a-entity position="-2.22133 8.73982 -97.32351" scale="0.43215 0.39 1" text="value: Benefits we offer; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
+    <a-entity cursor-listener ="src: #wealthbenefits;">
+        <a-sphere position="-7.00535 2.98793 -97.855" radius="0.5" height="1.5" color="#eeff92" material="src:#sphereTexture1;metalness:0.4;opacity:0.8" geometry="" scale="2 2 2" rotation="">
+      <a-animation begin="click" attribute="rotation" to="0 360 0" easing="linear" dur="10000" fill="backwards"></a-animation>
+      </a-sphere>
+         <a-entity position="-6.95913 4.45791 -97.32351" scale="0.43215 0.39 1" text="value:A network of 230 experts;align:center;height:2;lineHeight:1.33;width:20;color:#010100;opacity:2" rotation=""></a-entity>
 
-         <a-sphere position="1.67185 5.79618 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
-		 <a-animation begin="click" attribute="rotation" to="0 360 0"
-                   easing="linear" dur="10000" fill="backwards"></a-animation>
-		 </a-sphere>
-         <a-entity position="1.86066 6.9628 -97.32351" scale="0.43215 0.39 1" text="value: The capacity to deal with your requests; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
+         <a-sphere position="-5.85667 6.13247 -97.855" radius="0.5" height="1.5" color="#eeff92" material="src:#sphereTexture2;metalness:0.4;opacity:0.8" geometry="" scale="2 2 2" rotation="">
+     <a-animation begin="click" attribute="rotation" to="0 360 0" easing="linear" dur="10000" fill="backwards"></a-animation>
+     </a-sphere>
+         <a-entity position="-5.98452 7.4969 -97.32351" scale="0.43215 0.39 1" text="value:A presence in 9 Countries;align:center;height:2;lineHeight:1.33;width:20;color:#010100;opacity:2" rotation=""></a-entity>
 
-         <a-sphere position="2.54517 2.986 -97.855" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 3">
-		 <a-animation begin="click" attribute="rotation" to="0 360 0"
-                   easing="linear" dur="10000" fill="backwards"></a-animation>
-		 </a-sphere>
-         <a-entity position="2.32033 4.17235 -97.50583" scale="0.43215 0.39 1" text="value: International Expertise; align: center; height: 2; lineHeight: 1.33; width: 15.19; color: #010100; opacity: 2" rotation=""></a-entity>
-          </a-entity>
+        <a-sphere position="-2.24943 8.64521 -97.855" radius="0.5" height="1.5" color="#eeff92" material="src:#sphereTexture3;opacity:0.8;metalness:0.4" geometry="" scale="2 2 2">
+     <a-animation begin="click" attribute="rotation" to="0 360 0" easing="linear" dur="10000" fill="backwards"></a-animation>
+     </a-sphere>
+         <a-entity position="-2.22133 9.80063 -97.32351" scale="0.43215 0.39 1" text="value:Benefits we offer;align:center;height:2;lineHeight:1.33;width:20;color:#010100;opacity:2" rotation=""></a-entity>
+
+         <a-sphere position="1.67185 6.24106 -97.855" radius="0.5" height="1.5" color="#eeff92" material="src:#sphereTexture2;opacity:0.8;metalness:0.4" geometry="" scale="2 2 2" rotation="">
+     <a-animation begin="click" attribute="rotation" to="0 360 0" easing="linear" dur="10000" fill="backwards"></a-animation>
+     </a-sphere>
+         <a-entity position="1.86066 7.51382 -97.32351" scale="0.43215 0.39 1" text="value:The capacity to deal with your requests;align:center;height:2;lineHeight:1.33;width:20;color:#010100;opacity:2" rotation=""></a-entity>
+
+         <a-sphere position="2.54517 3.30215 -97.855" radius="0.5" height="1.5" color="#eeff92" material="src:#sphereTexture1;metalness:0.4;opacity:0.8" geometry="" scale="2 2 2" rotation="">
+     <a-animation begin="click" attribute="rotation" to="0 360 0" easing="linear" dur="10000" fill="backwards"></a-animation>
+     </a-sphere>
+        <a-entity position="2.32033 4.50981 -97.50583" scale="0.43215 0.39 1" text="value:International Expertise;align:center;height:2;lineHeight:1.33;width:20;color:#010100;opacity:2" rotation=""></a-entity>
          <a-entity position="0 0 -200.32351"  environment="preset: forest; seed: 100000;shadow:true;shadowSize:20;ground:flat;dressing:trees;dressingAmount:5;dressingScale:5;grid:dots;groundTexture:squares;gridColor:#e2751d;"></a-entity>
-          
+      </a-entity>
 
         <!--a-entity gltf-model="#signBoard" rotation="0 83.045 0" position="1.279 4.267 -15.219"  scale="0.003 0.003 0.003"></a-entity>
         <a-plane position="1.279 4.267 -15.219"  scale="0.1 0.1 0.1"></a-plane>
@@ -278,47 +289,47 @@
         <!-- Corporate solutions -->
         <a-cylinder position="4.01807 -8.03519 -108.34202" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
         <a-plane position="3.39742 3.64723 -107.38754" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
-        <a-image position="3.10269 3.38595 -106.65587" rotation="0 0 5.441" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
+        <a-image position="3.10269 3.38595 -106.65587" rotation="0 0 -2.034000172714422" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="3.16687 4.64426 -106.94602" scale="0.43215 0.39 1" text="value: Corporate Solutions; height: 2; lineHeight: 1.33; width: 27.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
         <a-entity cursor-listener ="src: #corporatesale;" gltf-model="#entrepreneur" position="-9.12534 0.17161 -107.477" rotation="2.2259410340832484 42.21610330303418 0" scale="0.002 0.002 0.002"></a-entity>
-        <a-entity cursor-listener ="src: #corporatesale;" gltf-model="#cloud" position="-10.68092 7.72184 -110.76658" rotation="62.588763624500864 0.12261296815799617 -30.861225719131536" scale="0.01 0.01 0.01"></a-entity>
-        <a-entity cursor-listener ="src: #corporatesale;" position="-10.40116 6.27683 -109.45004" scale="0.43215 0.39 1" text="value: Fund?...Sale?...Transfer?; height: 2; lineHeight: 1.33; width: 22.19; color: #000000; opacity: 2; align: center" rotation="5.88771430276434 15.316880737232298 -18.279645495853785"></a-entity>
-        <a-entity cursor-listener ="src: #corporateequity;" gltf-model="#manInSuit" position="7.50224 -2.43872 -118.13934" rotation="0 49.22509601086955 0" scale="2.23525 2.01829 3.19489"></a-entity>
-        <a-entity  cursor-listener ="src: #corporateequity;" gltf-model="#cloud" position="5.29188 8.03232 -117.31403" rotation="68.35042721233641 -30.9758172781577 -2.0632210202660946" scale="0.01 0.01 0.01"></a-entity>
-        <a-entity cursor-listener ="src: #corporateequity;" position="4.55178 6.32988 -116.50607" scale="0.43215 0.39 1" text="value: Direct and Private Equity !!!; height: 2; lineHeight: 1.33; width: 22.19; color: #000000; opacity: 2; align: center" rotation="9.485316298390778 -22.724652070478708 1.4163516695633949"></a-entity>
+        <a-entity cursor-listener="src:#corporatesale" gltf-model="#cloud" position="-10.68092 7.72184 -110.76658" rotation="63.86072992969129 12.81420108810086 -12.621114311141774" scale="0.015 0.015 0.015"></a-entity>
+       <a-entity cursor-listener="src:#corporatesale" position="-10.31281 5.85319 -108.76635" scale="0.43215 0.39 1" text="value:Fund?...Sale?...Transfer?;height:2;lineHeight:1.33;width:30;color:#000000;opacity:2;align:center" rotation="6.958572421863848 12.653199947669101 -7.563042895726867"></a-entity>
+        <a-entity cursor-listener="src:#corporateequity" gltf-model="#manInSuit" position="7.50224 -2.43872 -120.40727" rotation="0 49.22509601086955 0" scale="2.23525 2.01829 3.19489"></a-entity>
+       <a-entity cursor-listener="src:#corporateequity" gltf-model="#cloud" position="5.29188 8.03232 -119.07739" rotation="68.35042721233641 -30.9758172781577 -2.0632210202660946" scale="0.015 0.015 0.01"></a-entity>
+        <a-entity cursor-listener="src:#corporateequity" position="4.65985 6.49257 -118.09584" scale="0.43215 0.39 1" text="value:Direct and Private Equity !!!;height:2;lineHeight:1.33;width:30;color:#000000;opacity:2;align:center" rotation="9.485316298390778 -22.724652070478708 1.4163516695633949"></a-entity>
         <a-entity cursor-listener ="src: #corporaterealestate;" gltf-model="#property" position="-38.39952 -140.61874 -97.9392" rotation="-0.4388856710702106 -36.76899354472545 2.0271246791728528" scale="80 80 80"></a-entity>
         <a-cylinder position="-14.77938 -8.03519 -128.80359" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
-        <a-plane position="-14.21969 4.67107 -128.36044" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="-1.8626857919703061 45.00010522957486 2.9409923624065155"></a-plane>
-        <a-entity cursor-listener ="src: #corporaterealestate;" position="-13.61258 4.72359 -127.40883" scale="0.43215 0.39 1" text="value: Buy or Sale; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center" rotation="1.3309809580889025 57.85613223672026 3.1873642143127694"></a-entity>
+        <a-plane position="-14.21969 6.05759 -128.36044" color="#FFC65D" scale="6 6 6" material="color:#ffffff;emissive:#b2b35a" geometry="" rotation="-1.8626857919703061 32.142932306839185 2.9409923624065155"></a-plane>
+        <a-entity cursor-listener="src:#corporaterealestate" position="-13.50881 6.62437 -127.49631" scale="0.43215 0.39 1" text="value:Buy or Sale Property;height:2;lineHeight:1.33;width:30.19;color:#000000;opacity:2;align:center" rotation="1.3309809580889025 57.85613223672026 3.1873642143127694"></a-entity>
 
         <a-cylinder position="4.01807 -8.03519 -133" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
         <a-plane position="3.49925 3.64723 -133" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
-        <a-image position="2.98135 3.38595 -132.41151" rotation="-1.3263972957278558 -25.614078231323454 1.4902632251352712" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
+        <a-image position="2.98135 3.38595 -132.41151" rotation="-3.4113907122089215 -25.433596525857244 -2.877967004942125" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
         <a-entity position="3.16687 4.64426 -133" scale="0.43215 0.39 1" text="value: Financing; height: 2; lineHeight: 1.33; width: 27.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
 
-        <a-image position="5.32785 1.7073 -138.41151" src="#mortgageLoans" material="" geometry="" scale="3 2 2"></a-image>
-        <a-entity position="5.32785 0.46911 -138.41151" scale="0.43215 0.39 1" text="value: Mortgage Loans; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-image position="1.41735 4.58283 -138.41151" src="#investmentLoans" material="" geometry="" scale="3 2 2"></a-image>
-        <a-entity position="1.41735 3.32675 -138.41151" scale="0.43215 0.39 1" text="value: Investment Loans; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-image position="-6.5819 4.5339 -138.41151" src="#yachtAndJetFinancing" material="" geometry="" scale="3 2 2"></a-image>
-        <a-entity position="-6.5819 3.27401 -138.41151" scale="0.43215 0.39 1" text="value: Yacht and Jet financing; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-image position="-2.79945 6.94546 -138.41151" src="#lombardCredits" material="" geometry="" scale="3 2 2"></a-image>
-        <a-entity position="-2.79945 5.84326 -138.41151" scale="0.43215 0.39 1" text="value: Lombard credits; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-image position="-10.21752 1.70677 -138.41151" src="#liquidity" material="" geometry="" scale="3 2 2"></a-image>
-        <a-entity position="-10.21752 0.44815 -138.41151" scale="0.43215 0.39 1" text="value: Liquidity facilities; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
+        <a-image position="4.08092 3.93807 -142.41151" src="#mortgageLoans" material="" geometry="" scale="3 2 2"></a-image>
+        <a-entity position="4.07038 2.59491 -142.41151" scale="0.43215 0.39 1" text="value:Mortgage Loans;height:2;lineHeight:1.33;width:24;color:#000000;opacity:2;align:center"></a-entity>
+        <a-image position="1.41735 6.63758 -142.41151" src="#investmentLoans" material="" geometry="" scale="3 2 2"></a-image>
+        <a-entity position="1.41735 5.41128 -142.41151" scale="0.43215 0.39 1" text="value:Investment Loans;height:2;lineHeight:1.33;width:24;color:#000000;opacity:2;align:center"></a-entity>
+        <a-image position="-6.5819 6.43975 -142.41151" src="#yachtAndJetFinancing" material="" geometry="" scale="3 2 2"></a-image>
+        <a-entity position="-6.5819 5.16497 -142.41151" scale="0.43215 0.39 1" text="value:Yacht and Jet financing;height:2;lineHeight:1.33;width:24;color:#000000;opacity:2;align:center"></a-entity>
+        <a-image position="-2.79945 7.69164 -142.41151" src="#lombardCredits" material="" geometry="" scale="3 2 2"></a-image>
+        <a-entity position="-2.79945 6.43135 -142" scale="0.43215 0.39 1" text="value:Lombard credits;height:2;lineHeight:1.33;width:24;color:#000000;opacity:2;align:center"></a-entity>
+        <a-image position="-9.12949 3.73776 -142.412" src="#liquidity" material="" geometry="" scale="3 2 2"></a-image>
+        <a-entity position="-9.09327 2.40653 -142.41151" scale="0.43215 0.39 1" text="value:Liquidity facilities;height:2;lineHeight:1.33;width:24;color:#000000;opacity:2;align:center"></a-entity>
 
-        <a-entity gltf-model="#crowd" position="-15.11387 -1.8478 -156.8878" rotation="0 49.22509601086955 0" scale="2.23525 2.01829 3.19489"></a-entity>
-        <a-entity position="-14.3304 3.14613 -158.75108" scale="0.43215 0.39 1" text="value: 30 credit advisors; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center"></a-entity>
+        <a-entity gltf-model="#crowd" position="-15.11387 -1.8478 -159.50131" rotation="0 148.93923292866722 0" scale="2.23525 2.01829 3.19489"></a-entity>
+        <a-entity position="-17.59717 5.06335 -155.59707" scale="0.43215 0.39 1" text="value:30 credit advisors;height:2;lineHeight:1.33;width:60;color:#000000;opacity:2;align:center"></a-entity>
         <a-entity gltf-model="#cashPile" position="8.07791 3.36186 -156.8878" rotation="" scale="0.5 0.5 0.5"></a-entity>
-        <a-entity position="8.07791 4.31376 -156.8878" scale="0.43215 0.39 1" text="value: 9000 financial transactions set up in 2017; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-entity position="8.07791 3.6323 -156.8878" scale="0.43215 0.39 1" text="value: representing 13.9 billion Euros; height: 2; lineHeight: 1.33; width: 30.19; color: #000000; opacity: 2; align: center"></a-entity>
+        <a-entity position="11.35714 6.43985 -156.8878" scale="0.43215 0.39 1" text="value:9000 financial transactions set up in 2017;height:2;lineHeight:1.33;width:60;color:#000000;opacity:2;align:center"></a-entity>
+        <a-entity position="11.75353 5.2539 -156.8878" scale="0.43215 0.39 1" text="value:representing 13.9 billion Euros;height:2;lineHeight:1.33;width:60;color:#000000;opacity:2;align:center"></a-entity>
 
         <!-- Investment Solutions -->
 
-        <a-cylinder position="4.01807 -8.03519 -170" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
-        <a-plane position="3.49925 3.64723 -170" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
-        <a-image position="2.98135 3.38595 -169.41151" rotation="-1.3263972957278558 -25.614078231323454 1.4902632251352712" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
-        <a-entity position="3.16687 4.64426 -169.5242" scale="0.43215 0.39 1" text="value: Investment Solutions; height: 2; lineHeight: 1.33; width: 25.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
+        <a-cylinder position="4.01807 -8.03519 -168" radius="0.5" height="1.5" color="#FFC65D" scale="0.22091 15.3927 0.34921" material="color: #8d9085" geometry=""></a-cylinder>
+        <a-plane position="3.49925 3.64723 -168" color="#FFC65D" scale="5 3 3" material="color: #ffffff; emissive: #b2b35a" geometry="" rotation="3.1392357595217804 -42.46591290171123 -1.2788417987319973"></a-plane>
+        <a-image position="2.98135 3.38595 -167.41151" rotation="-1.3263972957278558 -25.614078231323454 1.4902632251352712" src="#leftArrow" material="" geometry="" scale="2 1 1"></a-image>
+        <a-entity position="3.16687 4.64426 -167.5242" scale="0.43215 0.39 1" text="value: Investment Solutions; height: 2; lineHeight: 1.33; width: 25.19; color: #000000; opacity: 2; align: center" rotation="0 -41.60991395578578 0"></a-entity>
 
         <!-- Investment Solutions-->
         <a-entity gltf-model="#fountain" position="-26.04088 3.25737 -178.77329" rotation="0 -67.57578827331955 0" scale="4 4 4"></a-entity>
@@ -328,27 +339,29 @@
         <a-entity position="-2.32861 4.36378 -174.8085" scale="0.43215 0.39 1" text="value: Advisory; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
         <a-sphere id="executionSphere" position="3.16687 4.02301 -176.5242" radius="0.5" height="1.5" color="#eeff92" material="" geometry="" scale="2 2 2"></a-sphere>
         <a-entity position="2.52792 2.47692 -174.8085" scale="0.43215 0.39 1" text="value: Execution; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-        <a-plane position="-2.55149 1.05832 -174.8085" color="#FFC65D" scale="6.90497 4.54019 3" material="color: #ffffff; emissive: #213ab3; opacity: 0.3" geometry="">     
+        <!--a-plane position="-2.55149 1.05832 -174.8085" color="#FFC65D" scale="6.90497 4.54019 3" material="color: #ffffff; emissive: #213ab3; opacity: 0.3" geometry="">     
+          </a-plane-->
+          <a-plane position="-2.55149 9.39298 -174.8085" color="#FFC65D" scale="12 4.54019 3" material="color:#ffffff;emissive:#213ab3;opacity:0.3" geometry="">     
           </a-plane>
           <a-entity id="advisory" visible="true">
-            <a-entity position="-2.55149 3.05832 -174.8085" scale="0.43215 0.39 1" text="value: Advisory; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 2.05832 -174.8085" scale="0.43215 0.39 1" text="value: You make the final decision on your; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 1.55832 -174.8085" scale="0.43215 0.39 1" text="value: investments with advice provided; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 1.05832 -174.8085" scale="0.43215 0.39 1" text="value: by our experts; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 11.05832 -174.8085" scale="0.43215 0.39 1" text="value: Advisory; height: 2; lineHeight: 1.33; width: 40.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 10.05832 -174.8085" scale="0.43215 0.39 1" text="value: You make the final decision on your; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 9.55832 -174.8085" scale="0.43215 0.39 1" text="value: investments with advice provided; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 9.05832 -174.8085" scale="0.43215 0.39 1" text="value: by our experts; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
           </a-entity>
 
            <a-entity id="managed" visible="false">
-            <a-entity position="-2.55149 3.05832 -174.8085" scale="0.43215 0.39 1" text="value: Managed; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 2.05832 -174.8085" scale="0.43215 0.39 1" text="value: You delegate the management of; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 1.55832 -174.8085" scale="0.43215 0.39 1" text="value: your portfolio to; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 1.05832 -174.8085" scale="0.43215 0.39 1" text="value: our experts; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 11.05832 -174.8085" scale="0.43215 0.39 1" text="value: Managed; height: 2; lineHeight: 1.33; width: 40.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 10.05832 -174.8085" scale="0.43215 0.39 1" text="value: You delegate the management of; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 9.55832 -174.8085" scale="0.43215 0.39 1" text="value: your portfolio to; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 9.05832 -174.8085" scale="0.43215 0.39 1" text="value: our experts; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
           </a-entity> 
 
          <a-entity id="execution" visible="false">
-            <a-entity position="-2.55149 3.05832 -174.8085" scale="0.43215 0.39 1" text="value: Execution; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 2.05832 -174.8085" scale="0.43215 0.39 1" text="value: You invest directly in the; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 1.55832 -174.8085" scale="0.43215 0.39 1" text="value: markets with no investment advice ;height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
-            <a-entity position="-2.55149 1.05832 -174.8085" scale="0.43215 0.39 1" text="value: by our experts; height: 2; lineHeight: 1.33; width: 20.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 11.05832 -174.8085" scale="0.43215 0.39 1" text="value: Execution; height: 2; lineHeight: 1.33; width: 40.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 10.05832 -174.8085" scale="0.43215 0.39 1" text="value: You invest directly in the; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 9.55832 -174.8085" scale="0.43215 0.39 1" text="value: markets with no investment advice ;height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
+            <a-entity position="-2.55149 9.05832 -174.8085" scale="0.43215 0.39 1" text="value: by our experts; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
           </a-entity> 
 
 
@@ -370,7 +383,7 @@
         <a-image position="-2.13962 2.00818 -186.5242" src="#art8" material="" geometry="" scale="4 2 2"></a-image>
         <a-image position="-6.4607 1.98501 -186.5242" src="#art9" material="" geometry="" scale="4 2 2"></a-image>
 
-        <a-entity position="-1.91301 8.38912 -186.5242" scale="0.43215 0.39 1" text="value: Art advisory: a real investment; height: 2; lineHeight: 1.33; width: 25.19; color: #000000; opacity: 2; align: center"></a-entity>
+        <a-entity position="-1.91301 8.38912 -186.5242" scale="0.43215 0.39 1" text="value: Art advisory: a real investment; height: 2; lineHeight: 1.33; width: 35.19; color: #000000; opacity: 2; align: center"></a-entity>
 
         <a-entity position="-2.52622 5.28427 -192.36" "="" scale="0.43215 0.39 1" text="value: Philanthropy: giving your wealth a purpose; height: 2; lineHeight: 1.33; width: 15.19; color: #000000; opacity: 2; align: center; tabSize: 5"></a-entity>
         <a-image position="-4.76379 4.23097 -192.35962" src="#phil1" material="" geometry="" scale="2 1 1"></a-image>
@@ -389,7 +402,7 @@
 
 
 
-    </a-entity>
+    <!--/a-entity-->
         <!--a-entity gltf-model="#signBoard" rotation="0 83.045 0" position="1.279 4.267 -15.219"  scale="0.003 0.003 0.003"></a-entity>
         <a-plane position="1.279 4.267 -15.219"  scale="0.1 0.1 0.1"></a-plane>
         <a-entity position="1.279 4.267 -15.219"  text="value: SO YOU CAN ENJOT IT; align: center; height: 2; lineHeight: 1.33; width: 8.19;color: #ffffff;"></a-entity-->
