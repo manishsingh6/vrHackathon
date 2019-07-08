@@ -113,7 +113,7 @@
         
         <a-asset-item id="signBoard" src="assets/objects/signBoard/Billboard 1.gltf"></a-asset-item>
         <a-asset-item id="tree" src="assets/objects/tree/model.gltf"></a-asset-item>
-        <a-asset-item id="elephant" src="assets/objects/elephant/model_New Qlone_20171023_184735172.gltf"></a-asset-item>
+        <!--a-asset-item id="elephant" src="assets/objects/elephant/model_New Qlone_20171023_184735172.gltf"></a-asset-item-->
         <!--a-asset-item id="swan" src="assets/objects/swan/GreatEgret.gltf"></a-asset-item-->
         <a-asset-item id="stone" src="assets/objects/stone/PUSHILIN_stone.gltf"></a-asset-item>
          <a-asset-item id="tree2" src="assets/objects/tree2/model.gltf"></a-asset-item>
@@ -127,6 +127,7 @@
          <a-asset-item id="crowd" src="assets/objects/crowd/model.gltf"></a-asset-item>
          <a-asset-item id="cashPile" src="assets/objects/cashPile/Money.gltf"></a-asset-item>
          <a-asset-item id="fountain" src="assets/objects/fountain/PUSHILIN_fountain.gltf"></a-asset-item>
+         <!--a-asset-item id="woofer" src="assets/objects/woofer/model.gltf"></a-asset-item-->
          
          <!--a-asset-item id="magicRing" src="assets/objects/magicRing/scene.gltf"></a-asset--->
          
@@ -196,8 +197,10 @@
                  direction="alternate-reverse"
                  easing="linear">
           </a-animation>
+
           
          </a-entity>
+          <!--a-entity  gltf-model="#woofer" position="-2.69328 6.582 -25.79874"" scale="1 1 1"></a-entity-->
         <!--a-cylinder position="-1.332 0.887 -15.905" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder-->
         <a-cylinder position="-6.8002 4.69372 -15.25692" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive:sphere"></a-cylinder>
         <a-cylinder position="1.17578 4.62676 -14.97041" radius="0.5" height="1.5" color="#FFC65D" material="" geometry="primitive:sphere"></a-cylinder>
@@ -227,7 +230,7 @@
         <a-entity position="-3.65165 12.26034 -36.47322" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Credit Provider;align:center;height:2;lineHeight6:1.33;width:20;color:#131313;opacity:3;wrapCount:50"></a-entity>
         <a-entity position="-3.69535 12.93516 -36.47322" scale="0.8701 0.89 1" text="font:assets/Roboto-msdf.json;value:Best Wealth Planning Team;align:center;height:2;lineHeight:1.33;width:20;wrapCount:50;color:#131313;opacity:3"></a-entity>
         <!--a-entity gltf-model="#swan" position="0.96568 -0.1435 -35.16213" rotation="-0.372 -90.000 0" scale="0.5 0.5 0.31"></a-entity-->
-        <a-entity gltf-model="#book" position="5.97086 2.71773 -42.25459" rotation="-0.37184960903990427 -58.78031316026629 0" scale="0.01 0.01 0.01"></a-entity>
+        <a-entity cursor-listener="src: #bespoke; " gltf-model="#book" position="5.97086 2.71773 -42.25459" rotation="-0.37184960903990427 -58.78031316026629 0" scale="0.01 0.01 0.01"></a-entity>
         <a-entity position="5.87662 5.00332 -42.12679" scale="0.43215 0.89 1" text="value:3 Step Bespoke Approach;align:center;height:2;lineHeight:1.33;width:14;color:#ffda26;opacity:2" rotation="-29.114277401777652 -58.69035878643075 1.2450372888192789"></a-entity>
         <a-entity position="5.07436 3.51745 -41.63527" scale="0.43215 0.89 1" text="value:Wealth &amp; Financial Diagnosis;align:center;height:2;lineHeight:1.33;width:12;color:#ffffff;opacity:2" rotation="-29.114277401777652 -58.69035878643075 1.2450372888192789"></a-entity>
         <a-entity position="4.65628 2.99795 -41.25484" scale="0.43215 0.89 1" text="value:Tailoring your Investment Solutions;align:center;height:2;lineHeight:1.33;width:12;color:#ffffff;opacity:2" rotation="-29.114277401777652 -58.69035878643075 1.2450372888192789"></a-entity>
@@ -246,7 +249,7 @@
         <!--a-entity gltf-model="#paperPlane" position="-10.13915 2.47105 -36.68955" rotation="-1.4289567410562731 -79.32256898909168 0.9144406410287937" scale="0.8 0.8 0.8" animation-mixer></a-entity-->
 
         <!--a-entity cursor-listener sound="src: #keyfigures2017; " gltf-model="#banner" position="-15.13915 2.47105 -36.68955" rotation="-1.4289567410562731 -79.32256898909168 0.9144406410287937" scale="0.8 0.8 0.8"></a-entity-->
-        <a-entity gltf-model="#stoneBlock" position="-13.22335 2.22371 -40.68882" rotation="-25.950404457065247 45.075162700736996 2.5553917662834715" scale="0.04 0.04 0.04"></a-entity>
+        <a-entity cursor-listener="src: #keyfigures2017; " gltf-model="#stoneBlock" position="-13.22335 2.22371 -40.68882" rotation="-25.950404457065247 45.075162700736996 2.5553917662834715" scale="0.04 0.04 0.04"></a-entity>
         <a-entity position="-12.36323 4.98966 -39.60519" scale="0.43215 0.89 1" text="value:Key figures - 2017;align:center;height:2;lineHeight:1.33;width:20;color:#000000;opacity:2" rotation="-14.172111062560912 46.1162270144897 -1.017573044152342"></a-entity>
         <a-entity position="-12.0469 3.98966 -39.60519" scale="0.43215 0.89 1" text="value:1094m euros in net banking income;align:center;height:2;lineHeight:1.33;width:18;color:#ffda26;opacity:2" rotation="-14.172111062560912 46.1162270144897 -1.017573044152342"></a-entity>
         <a-entity position="-11.98449 3.28378 -39.45529" scale="0.43215 0.79 1" text="value:118b euros in assets under management;align:center;height:2;lineHeight:1.33;width:18;color:#ffffff;opacity:2" rotation="-2.2150548359757627 45.039066359643755 -1.302906026127492"></a-entity>
